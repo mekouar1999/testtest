@@ -1,218 +1,128 @@
-# 📘 TD / TP – APPLICATION WEB
+# 🧪 TP — APPLICATION WEB  
+## Interactivité, Responsive & Animations (JavaScript + CSS)
 
-## Rythme officiel du module (mis à jour)
-
-🔗 **Lien de la maquette Figma**  
-👉 https://www.figma.com/design/40ZcAJUXkb1v2yLwFdJUhD/Portfolio--Community-
-
----
-
-## 🧭 Objectif global du module
-
-À la fin du module, l’étudiant sera capable de :
-
-- Concevoir une interface web avec **Figma**
-- Intégrer une maquette en **HTML / CSS**
-- Rendre un site interactif avec **JavaScript**
-- Stocker des données avec le **Local Storage**
-- Comprendre l’architecture **client / serveur**
-- Créer une **API REST** avec **Node.js**
-- Communiquer entre **Frontend et Backend**
-- *(Option)* Utiliser une base de données **MongoDB**
+📅 **TP du jour**  
+🎯 Objectif : Passer d’un site statique à un site **interactif, responsive et moderne**
 
 ---
 
-## 🟦 PHASE 1 — FRONT-END : STRUCTURE & DESIGN  
-✅ **Déjà réalisé**
+## 🧭 Objectifs pédagogiques
 
-### 🔹 TP 1 — HTML, CSS & Flexbox
-**Type : TP**  
-**Objectif : Bases du web**
+À la fin de ce TP, l’étudiant sera capable de :
 
-**Contenu :**
-- Structure HTML
-- Balises principales
-- CSS (sélecteurs, styles)
-- Mise en page avec Flexbox
-- Création d’une page web statique complète
+- Finaliser une maquette Figma
+- Intégrer des interactions JavaScript
+- Gérer le scroll de la page
+- Créer une navigation responsive
+- Implémenter des animations modernes
+- Comprendre la logique UX derrière les interactions
+
+---
+
+## 📌 Partie 0 — Finalisation de la maquette Figma
+
+### 🎯 Objectif
+Avoir une **maquette propre et complète** avant de coder.
+
+### Travail demandé :
+- Vérifier que toutes les sections sont présentes :
+  - Navbar
+  - Hero section
+  - Contenu principal
+  - Footer
+- Vérifier :
+  - Espacements
+  - Couleurs
+  - Typographie
+- Adapter la maquette pour :
+  - Desktop
+  - Mobile
 
 📌 **Résultat attendu :**  
-➡️ Site web structuré et stylé
+➡️ Maquette Figma finalisée et validée
 
 ---
 
-### 🔹 TP 2 — Maquette Figma
-**Type : TP**  
-**Objectif : Design UI**
+## 📁 Structure du projet
 
-**Contenu :**
-- Création d’un projet Figma
-- Conception d’un site (portfolio / community)
-- Organisation des sections
-- Réflexion UX / UI
+```text
+/portfolio
+ ├── index.html
+ ├── style.css
+ ├── script.js
+ └── assets/
+```
+
+## 🧪 Exercice 1 — Navbar dynamique au scroll
+
+### 🎯 Objectif
+Masquer la navbar lorsque l’utilisateur descend la page et la réafficher lorsqu’il remonte.
+
+### Comportement attendu :
+- Scroll vers le bas → navbar invisible  
+- Scroll vers le haut → navbar visible  
+
+### Contraintes :
+- Animation fluide  
+- Navbar en position fixe  
 
 📌 **Résultat attendu :**  
-➡️ Maquette complète sur Figma (lien fourni)
+➡️ Navigation plus agréable et moderne
 
 ---
 
-## 🟨 PHASE 2 — INTERACTIVITÉ FRONT-END (JAVASCRIPT)
+## 🧪 Exercice 2 — Sidebar responsive avec toggle et animation
 
-### 🔹 TP 3 — Introduction JavaScript
-**Type : TP**
+### 🎯 Objectif
+Créer un menu mobile qui apparaît depuis la droite avec une animation fluide.
 
-**Contenu :**
-- Rôle de JavaScript
-- Variables
-- Fonctions
-- Conditions
-- `console.log`
-- Lien JavaScript ↔ HTML
+### Comportement attendu :
+- Bouton toggle visible uniquement en mobile  
+- Sidebar cachée par défaut  
+- Clic sur le toggle → sidebar animée  
+- Design responsive (desktop / mobile)  
 
 📌 **Résultat attendu :**  
-➡️ Premiers scripts JavaScript fonctionnels
+➡️ Menu mobile moderne et ergonomique
 
 ---
 
-### 🔹 TP 4 — DOM & Événements
-**Type : TP**
+## 🧪 Exercice 3 — Bouton “Mode Focus”
 
-**Contenu :**
-- DOM (Document Object Model)
-- Sélection des éléments :
-  - `getElementById`
-  - `querySelector`
-- Modification du contenu et du style
-- Gestion des événements :
-  - `click`
-  - `submit`
+### 🎯 Objectif
+Ajouter une fonctionnalité UX avancée pour améliorer la concentration sur le contenu principal.
+
+### Principe :
+- Un bouton active le **Mode Focus**  
+- Le contenu principal est mis en avant  
+- Les éléments secondaires deviennent moins visibles  
+- Animation fluide lors de l’activation  
 
 📌 **Résultat attendu :**  
-➡️ Site web interactif
+➡️ Expérience utilisateur immersive
 
 ---
 
-### 🔹 TP 5 — Local Storage
-**Type : TP**
+## ✅ Travail à rendre
 
-**Contenu :**
-- `localStorage.setItem`
-- `localStorage.getItem`
-- `localStorage.removeItem`
-- Sauvegarde de données issues de formulaires
-- Chargement automatique des données au rechargement de la page
-
-📌 **Résultat attendu :**  
-➡️ Données persistantes côté navigateur
+- Maquette Figma finalisée  
+- Code HTML / CSS / JavaScript fonctionnel  
+- Navbar dynamique au scroll  
+- Sidebar responsive animée  
+- Fonctionnalité Mode Focus  
+- Respect de la structure du projet  
 
 ---
 
-## 🔵 PHASE 3 — TD : COMPRÉHENSION & ARCHITECTURE
+## 🏁 Conclusion
 
-### 🔹 TD 1 — Architecture Web & HTTP
-**Type : TD**
-
-**Contenu :**
-- Frontend vs Backend
-- Architecture Client / Serveur
-- Protocole HTTP
-- Méthodes GET / POST
-- Format JSON
-- Pourquoi utiliser une API ?
-
-📌 **Objectif pédagogique :**  
-➡️ Comprendre le fonctionnement d’une application web moderne
+> Ce TP marque le passage d’un site statique à un site **interactif, responsive et professionnel**, en appliquant des concepts modernes du développement web.
 
 ---
 
-### 🔹 TD 2 — API REST & Données
-**Type : TD**
+## 💡 Bonus (facultatif)
 
-**Contenu :**
-- Principe d’une API REST
-- Notion de routes
-- Sécurité (bases)
-- Limites du Local Storage
-- Introduction aux bases de données
+- Sauvegarder le mode focus dans le **Local Storage**  
+- Ajouter des animations CSS supplémentaires  
+- Améliorer l’accessibilité (navigation clavier, contrastes)
 
-📌 **Objectif pédagogique :**  
-➡️ Préparer les étudiants au backend
-
----
-
-## 🟥 PHASE 4 — BACKEND AVEC NODE.JS
-
-### 🔹 TP 6 — Introduction à Node.js
-**Type : TP**
-
-**Contenu :**
-- Qu’est-ce que Node.js
-- Utilisation de npm
-- Création d’un serveur backend
-- Structure d’un fichier `server.js`
-
-📌 **Résultat attendu :**  
-➡️ Serveur backend fonctionnel
-
----
-
-### 🔹 TP 7 — Express & API REST
-**Type : TP**
-
-**Contenu :**
-- Framework Express.js
-- Création de routes API :
-  - GET
-  - POST
-- Manipulation de JSON
-- Tests avec Postman
-
-📌 **Résultat attendu :**  
-➡️ API REST simple et fonctionnelle
-
----
-
-### 🔹 TP 8 — Communication Frontend ↔ Backend
-**Type : TP**
-
-**Contenu :**
-- Utilisation de `fetch()` côté frontend
-- Envoi de données vers l’API
-- Récupération de données depuis l’API
-- Affichage dynamique des données
-
-📌 **Résultat attendu :**  
-➡️ Application Frontend et Backend connectée
-
----
-
-## 🟪 PHASE 5 — BASE DE DONNÉES *(Option / si le temps le permet)*
-
-### 🔹 TP 9 — MongoDB
-**Type : TP**
-
-**Contenu :**
-- MongoDB Atlas
-- Notions de collections et documents
-- Utilisation de Mongoose
-- CRUD :
-  - Create
-  - Read
-  - Update
-  - Delete
-
-📌 **Résultat attendu :**  
-➡️ Application Full Stack complète
-
----
-
-## 🏁 FIN DU MODULE — PROJET FINAL
-
-### 🎯 Sujet du projet final
-
-Développer une application web complète comprenant :
-
-- Frontend : HTML / CSS / JavaScript
-- Backend : Node.js / Express
-- API REST
-- *(Option)* Base de données MongoDB
