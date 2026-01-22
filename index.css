@@ -1,0 +1,398 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.navbar-list{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+li{
+    list-style: none;
+}
+
+*{
+    font-family: 'DM Sans', sans-serif;
+}
+
+body{
+    background-color: rgb(26, 26, 26);
+    color: white;
+}
+
+.btn1{  
+    background-color: green;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    color: white;
+}
+
+.btn2{
+    background-color: inherit;
+    border: 1px solid white;
+    padding: 10px 20px;
+    cursor: pointer;
+    color: white;
+}
+
+.btns{
+    display: flex;
+    gap: 15px;
+}
+
+.section1{
+    display: flex;
+    justify-content: space-around;
+    padding: 0 20px;
+}
+
+.section1 img{
+    width: 100%;
+}
+
+.section1-left{
+    width: 40%;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.section1 p{
+    text-align: start;
+}
+
+.section1-right{
+    width: 40%;
+}
+
+
+/* SECTION 2 */
+
+
+.section2 h1{
+    text-align: center;
+}
+
+.section2 p{
+    text-align: center;
+   width: 80%;
+   display: flex;
+   justify-content: center;
+   margin: 0 auto;
+}
+
+/* SECTION 3 */
+
+.cercle{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: rgb(44, 44, 44);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.petitcercle{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: green;
+  
+}
+
+.section3{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 2rem;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.title{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.desc{
+    font-size: 16px;
+    font-weight: 400;
+}
+
+
+/* SECTION 4 */
+
+.section4 h1{
+    text-align: center;
+}
+
+.section4maman{
+    display: flex;
+    justify-content: center;
+    padding: 0 20px;
+    gap: 20px;
+}
+
+.section4-card{
+    background-color: rgb(40, 40, 40);
+    padding: 30px;
+    width: 24%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 10px;
+    height: 200px;
+
+}
+
+.bordure{
+    border-bottom: 4px solid green;
+
+}
+
+
+.section4-card h1{
+    font-size: 20px;
+    color: gray;
+}  
+
+/* SECTION 5 */
+
+.title{
+    text-align: center;
+}
+
+.section5maman{
+    display: flex;
+    justify-content: space-around;
+    padding: 0 20px;
+    gap: 20px;
+    background-color: rgb(50, 50, 50);
+    margin: 0 50px;
+}
+
+.section5-card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.section5-card h1{
+   margin: 0;
+   color: gray;
+   font-size: 40px;
+}
+
+.section5-card p{
+    color: green;
+ }
+
+ .section5,.section4,.section3,.section2,.section1{
+    padding: 50px 0;
+ }
+ 
+
+
+ /* RESPONSIVE */
+/* 
+ @media screen and (max-width: 450px    ) {
+.section1{
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+
+.section1-left h1{
+    text-align: center;
+}
+
+.section1-right img{
+    width: 100%;
+}
+
+.section1-right{
+    width: 80%;
+    padding-top: 20px;
+}
+
+.section2{
+    padding: 50px 20px;
+}
+
+.section3{
+    flex-wrap: wrap;
+    padding: 0;
+}
+.section4maman{
+    width: 100%;
+    flex-wrap: wrap;
+    padding: 0;
+}
+.section4-card{
+    width: 100%;
+    padding: 20px;
+}
+.section5maman{
+    width: 100%;
+    flex-wrap: wrap;
+    padding: 0;
+}
+
+.section4{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.section5maman{
+    flex-direction: column;
+    width: 75%;
+}
+
+    .section5-card{
+        border-bottom: 10px solid rgb(26, 26, 26);
+
+ }
+
+ .navbar{
+    display: none;
+ }
+
+ .rectangle{
+    width: 30px;
+    height: 3px;
+    background-color: white;
+ }
+
+ .toogle{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    position: absolute;
+    top: 23px;
+    right: 27px;
+ }
+
+ .flex{
+    display: flex;
+    flex-direction: column;
+ }
+
+ .navbar-list{
+    flex-direction: column;
+ }
+} */
+
+
+
+@media screen and (max-width: 450px) {
+
+    .navbar-list{
+        right: -300px;
+        display: none;
+        
+    }
+
+    .section1{
+            flex-direction: column;
+            align-items: center;
+
+    }
+
+    .section1-left h1{
+        text-align: center;
+    }
+
+    .section1-left p{
+        text-align: center;
+    }
+    .section1-right{
+        width: 80%;
+        padding-top: 20px;
+    }
+
+    .section2{
+        padding: 0px 20px;
+    }
+
+    .section3{
+        flex-wrap: wrap;
+    }
+
+    .section4maman{
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .section4-card{
+        width: 85%;
+        
+    }
+
+    .section5maman{
+        flex-direction: column;
+        padding: 0;
+
+    }
+
+    .section5-card{
+        border-bottom: 10px solid rgb(26, 26, 26);
+    }
+
+   .toogle{
+    position: absolute;
+    top: 28px;
+    right: 25px;
+    display: flex;
+    gap: 6px;
+    flex-direction: column;
+    z-index: 1000;
+   }
+
+   .rectangle{
+    width: 30px;
+    height: 3px;
+    background-color: white;
+   }
+    
+    
+  
+}
+
+.sidebar{
+    display: flex;
+    flex-direction: column;
+    background: black;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    right: 0;
+    margin-top: 0;
+    transition: 0.5s ease-in-out;
+}
+
